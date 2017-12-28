@@ -1,0 +1,12 @@
+# Copyright 2017 Sean Kelleher. All rights reserved.
+# Use of this source code is governed by a BSD
+# licence that can be found in the LICENCE file.
+
+[package]
+name = "test"
+version = "0.1.0"
+authors = ["Sean Kelleher <ezanmoto@gmail.com>"]
+build = "build.rs"
+
+[dependencies]
+libc = "0.2"

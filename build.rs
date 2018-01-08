@@ -1,4 +1,4 @@
-// Copyright 2017 Sean Kelleher. All rights reserved.
+// Copyright 2017-2018 Sean Kelleher. All rights reserved.
 // Use of this source code is governed by a BSD
 // licence that can be found in the LICENCE file.
 
@@ -15,7 +15,7 @@ fn main() {
             .args(&[
                 "--recursive",
                 "-v",
-                "codegen",
+                "src/libtest",
                 &out_dir,
             ])
             .status()
@@ -23,7 +23,7 @@ fn main() {
             .success()
     );
 
-    let libtest_out_dir = format!("{}/codegen/libtest", &out_dir);
+    let libtest_out_dir = format!("{}/libtest", &out_dir);
     assert_eq!(
         true,
         Command::new("sed")

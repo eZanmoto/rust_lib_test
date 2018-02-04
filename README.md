@@ -21,6 +21,10 @@ project with incorrect configurations. The errors are presented with their
 reasoning in the "Tests" section. A reverse mapping of errors to their causes
 and solutions is detailed in the next section, "Solutions".
 
+Note that Rust doesn't require C header files in order to link with C-based
+libraries, which can be demonstrated by running the examples after removing
+`print.h`, and removing the include statement for it in `print.c`.
+
 Solutions
 ---------
 
